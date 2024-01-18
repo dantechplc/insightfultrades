@@ -1,0 +1,540 @@
+{% extends "frontend/base.html" %}
+{% load static %}
+{% block title %} INSIGHTFUL TRADE - HOME{% endblock %}
+{% block content %}
+
+    <!-- banner-home start -->
+    <section class="banner-home overflow-hidden pt-lg-100 pt-md-90 pt-sm-80 pt-xs-70">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="banner-home__content pb-lg-60 pb-md-50 pb-sm-45 pb-xs-40">
+                        <h6 class="sub-title color-white mb-20 mb-sm-15 mb-xs-10 d-inline-block">Welcome To <span>Insightful</span> Trades</h6>
+                        <h1 class="title color-white fw-bold mb-20 mb-sm-15 mb-xs-10">Build Up Your Business Strategy</h1>
+
+                        <div class="description font-la color-white mb-45 mb-md-30 mb-sm-25 mb-xs-20">
+                            <p>At Insightful Trades, we understand today's dynamic business landscape, and a keen understanding of market trends..</p>
+                        </div>
+
+                        <div class="theme-btn__wrapper d-flex flex-wrap">
+                            <a href="{% url 'frontend:contact' %}" class="theme-btn fw-600 btn-red">Get A Quote <i class="far fa-chevron-double-right"></i></a>
+                            <a href="{% url 'frontend:about' %}" class="theme-btn fw-600 btn-white-border">Read More <i class="far fa-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="banner-home__media">
+                        <img src="{% static 'frontend/assets/img/banner/banner-start.svg' %}" class="img-fluid start" alt="">
+                        <img src="{% static 'frontend/assets/img/banner/banner-home.png' %}" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner-home end -->
+
+    <div class="our-company-financial overflow-hidden">
+        <div class="overly">
+            <div class="container"></div>
+        </div>
+    <!-- financial-area start -->
+    <section class="financial pb-xs-80 pt-xs-80 pt-sm-100 pb-sm-100 pt-md-100 pb-md-100 pt-120 pb-120 overflow-hidden">
+        <div class="container">
+            <div class="row mb-minus-30">
+                <div class="col-xl-4 col-md-6">
+                    <div class="financial__item d-flex mb-30" style="background-image: url({% static 'frontend/assets/img/home/financial__item-bg.html)">
+                        <div class="icon">
+                            <img src="{% static 'frontend/assets/img/icon/growth.svg' %}" alt="">
+                            <!-- <i class="fal fa-analytics"></i> -->
+                        </div>
+
+                        <div class="text">
+                            <h6 class="title color-pd_black mb-10 mb-xs-5">Business Strategy</h6>
+
+                            <div class="description font-la">
+                                <p>We work closely with you to develop robust business strategies to changing market conditions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="financial__item d-flex mb-30" style="background-image: url({% static 'frontend/assets/img/home/financial__item-bg.html)">
+                        <div class="icon">
+                            <img src="{% static 'frontend/assets/img/icon/planning-1.svg' %}" alt="">
+                            <!-- <i class="fal fa-analytics"></i> -->
+                        </div>
+
+                        <div class="text">
+                            <h6 class="title color-pd_black mb-10 mb-xs-5">Financial Planning</h6>
+
+                            <div class="description font-la">
+                                <p>Gain a competitive edge through our comprehensive market research and analysis services. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="financial__item d-flex mb-30" style="background-image: url({% static 'frontend/assets/img/home/financial__item-bg.html)">
+                        <div class="icon">
+                            <img src="{% static 'frontend/assets/img/icon/international.svg' %}" alt="">
+                            <!-- <i class="fal fa-analytics"></i> -->
+                        </div>
+
+                        <div class="text">
+                            <h6 class="title color-pd_black mb-10 mb-xs-5">International Business</h6>
+
+                            <div class="description font-la">
+                                <p> Our global perspective enables you to navigate the intricacies of international trades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- financial-area end -->
+
+    <!-- our-company start -->
+    <section class="our-company pb-xs-80 pb-100 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="our-company__meida">
+                        <img src="{% static 'frontend/assets/img/about/our-company-1.png' %}" alt="" class="img-fluid">
+
+                        <div class="years-experience overflow-hidden bg-red mt-20 mt-sm-10 mt-xs-10 text-center">
+                            <div class="number mb-5 color-white">
+                                <span class="counter">15</span><sup>+</sup>
+                            </div>
+
+                            <h5 class="title color-white">Years Experience</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="our-company__meida border-radius">
+                        <img src="{% static 'frontend/assets/img/about/our-company-2.png' %}" alt="" class="img-fluid">
+
+                        <div class="horizental-bar bg-red"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="our-company__content mt-md-50 mt-sm-40 mt-xs-35">
+                        <span class="sub-title fw-500 color-red text-uppercase mb-sm-10 mb-xs-5 mb-20 d-block"><img src="{% static 'frontend/assets/img/home/line.svg' %}" class="img-fluid mr-10" alt=""> Know Our Company</span>
+                        <h2 class="title color-pd_black mb-20 mb-sm-15 mb-xs-10">Our Company Provide High Quality Idea</h2>
+
+                        <div class="descriiption font-la mb-30 mb-md-25 mb-sm-20 mb-xs-15">
+                            <p>As a premier business and trade consultation company, we take pride in being your trusted partner on the path to sustainable growth and prosperity.</p>
+                        </div>
+
+                        <div class="client-feedback d-flex flex-column flex-sm-row">
+                            <div class="client-feedback__item client-feedback__item-two text-center">
+                                <div class="client-feedback__item-header">
+                                    <span class="color-red font-la fw-600 text-uppercase">Success Project</span>
+                                </div>
+
+                                <div class="client-feedback__item-body">
+                                    <div class="number mb-10 mb-xs-5 color-pd_black fw-600">+<span class="counter">95</span>%</div>
+                                    <div class="description font-la mb-10 mb-xs-5">
+                                        <p>Our success rate increases over the years as an experienced business and trade firm.</p>
+                                    </div>
+                                    <div class="starts">
+                                        <ul>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="client-feedback__item client-feedback__item-two text-center">
+                                <div class="client-feedback__item-header">
+                                    <span class="color-red font-la fw-600 text-uppercase">Customer Review</span>
+                                </div>
+
+                                <div class="client-feedback__item-body">
+                                    <div class="number mb-10 mb-xs-5 color-pd_black fw-600">+<span class="counter">4.7</span></div>
+                                    <div class="description font-la mb-10 mb-xs-5">
+                                        <p>Our clients reviews speaks for us on how we handle trades. </p>
+                                    </div>
+                                    <div class="starts">
+                                        <ul>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our-company end -->
+    </div>
+
+    <!-- planning-success start -->
+    <section class="planning-success pb-xs-80 pt-xs-80 pt-sm-100 pb-sm-100 pt-md-100 pb-md-100 pt-120 pb-130 overflow-hidden" style="background-image: url({% static 'frontend/assets/img/home/planning-success-bg.png' %});" >
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-9">
+                    <div class="planning-success__content mb-xs-35">
+                        <h2 class="title mb-20 mb-sm-15 mb-xs-10 color-white">Good Business Planning Ensures Success.</h2>
+
+                        <div class="description font-la color-white mb-40 mb-sm-30 mb-xs-20">
+                            <p>Enhance operational efficiency and streamline workflows with our business process optimization services.</p>
+                        </div>
+
+                        <a href="{% url 'frontend:services' %}" class="theme-btn btn-sm btn-red">View All Services <i class="far fa-chevron-double-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- planning-success end -->
+
+    <!-- why-choose start -->
+    <section class="why-choose why-choose__home pb-xs-80 pt-xs-80 pt-sm-100 pb-sm-100 pt-md-100 pb-md-100 pt-120 pb-120 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="why-choose__content why-choose__content-home">
+                        <div class="why-choose__text">
+                            <span class="sub-title d-block fw-500 color-red text-uppercase mb-sm-10 mb-xs-5 mb-15"><img src="{% static 'frontend/assets/img/home/line.svg' %}" class="img-fluid mr-10" alt=""> Our solutions</span>
+                            <h2 class="title color-pd_black">Developing Solutions For The Future</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="why-choose__content why-choose__content-home mt-md-25 mt-sm-20 mt-xs-20">
+                        <div class="description font-la">
+                            <p>Stay ahead of the curve with our innovative solutions. We continuously explore new trends and technologies to deliver cutting-edge strategies that give you a competitive advantage.</p>
+                        </div>
+
+                        <a href="{% url 'frontend:services' %}" class="theme-btn btn-sm btn-red mt-30 mt-sm-25 mt-xs-20">View All Services <i class="far fa-chevron-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why-choose end -->
+
+
+
+
+    <!-- our-portfolio-home start -->
+    <section class="our-portfolio-home pb-xs-80 pt-xs-80 pt-sm-100 pb-sm-100 pt-md-100 pb-md-100 pt-120 pb-120 overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="our-portfolio-home__content text-center mb-60 mb-sm-50 mb-xs-40">
+                        <span class="sub-title fw-500  text-uppercase mb-sm-10 mb-xs-5 mb-15 d-block color-red"><img src="{% static 'frontend/assets/img/home/line.svg' %}" class="img-fluid mr-10" alt=""> Our Portfolio</span>
+                        <h2 class="title color-pd_black">Our Consulting Case Study</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-minus-30">
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="our-portfolio-home__item mb-30">
+                        <div class="featured-thumb">
+                            <div class="media overflow-hidden">
+                                <img src="{% static 'frontend/assets/img/home/our-portfolio-home__item-1.png' %}" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="content d-flex flex-row">
+                            <div class="left">
+                                <div class="post-author mb-5 mb-xs-5 text-uppercase">
+                                    <a href="blog-details.html">Business, Finance</a>
+                                </div>
+
+                                <h5 class="color-pd_black mb-15 mb-xs-10"><a href="{% url 'frontend:services' %}">Business & Strategy</a></h5>
+                                <div class="description font-la">
+                                    <p> We work closely with you to develop robust business strategies, ensuring alignment with your goals and adaptability to changing market conditions. </p>
+                                </div>
+                            </div>
+
+                            <div class="btn-link-share">
+                                <a href="{% url 'frontend:services' %}" class="theme-btn color-pd_black" style="background-image: url({% static 'frontend/assets/img/home/theme-btn-overly.png' %})">View Details <i class="icon-arrow-right-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="our-portfolio-home__item mb-30">
+                        <div class="featured-thumb">
+                            <div class="media overflow-hidden">
+                                <img src="{% static 'frontend/assets/img/home/our-portfolio-home__item-2.png' %}" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="content d-flex flex-row">
+                            <div class="left">
+                                <div class="post-author mb-5 mb-xs-5 text-uppercase">
+                                    <a href="blog-details.html">Financial solution</a>
+                                </div>
+
+                                <h5 class="color-pd_black mb-15 mb-xs-10"><a href="{% url 'frontend:services' %}">Financial Reporting</a></h5>
+                                <div class="description font-la">
+                                    <p>Our financial reporting services are designed to provide you with clear, accurate, and insightful information that empowers you to make informed decisions, attract investors, and ensure regulatory compliance.</p>
+                                </div>
+                            </div>
+
+                            <div class="btn-link-share">
+                                <a href="{% url 'frontend:services' %}" class="theme-btn color-pd_black" style="background-image: url({% static 'frontend/assets/img/home/theme-btn-overly.png' %})">View Details <i class="icon-arrow-right-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="our-portfolio-home__item mb-30">
+                        <div class="featured-thumb">
+                            <div class="media overflow-hidden">
+                                <img src="{% static 'frontend/assets/img/home/our-portfolio-home__item-3.png' %}" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="content d-flex flex-row">
+                            <div class="left">
+                                <div class="post-author mb-5 mb-xs-5 text-uppercase">
+                                    <a href="{% url 'frontend:services' %}">Business, Consulting</a>
+                                </div>
+
+                                <h5 class="color-pd_black mb-15 mb-xs-10"><a href="blog-details.html">Business Consulting</a></h5>
+                                <div class="description font-la">
+                                    <p>our consultation services are more than just advice – they are a collaborative journey toward achieving your business goals. As a premier consulting firm, we pride ourselves on delivering  insights.</p>
+                                </div>
+                            </div>
+
+                            <div class="btn-link-share">
+                                <a href="{% url 'frontend:services' %}" class="theme-btn color-pd_black" style="background-image: url({% static 'frontend/assets/img/home/theme-btn-overly.png' %})">View Details <i class="icon-arrow-right-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- our-portfolio-home end -->
+
+
+    <!-- testimonial start -->
+    <section class="testimonial test pb-xs-80 pt-xs-80 pt-sm-100 pb-sm-100 pt-md-100 pb-md-100 pt-120 pb-120 overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-9">
+                    <div class="employee-friendly__content">
+                        <span class="sub-title fw-500 color-red text-uppercase mb-sm-10 mb-xs-5 mb-15 d-block"><img src="{% static 'frontend/assets/img/home/line.svg' %}" class="img-fluid mr-10" alt=""> testimonials</span>
+                        <h2 class="title color-pd_black">What people say About Us</h2>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                   <div class="slider-controls slider-controls-two mt-xs-15">
+                        <div class="testimonial-slider-arrows d-flex align-content-center justify-content-sm-end"></div>
+                   </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonial-slider-home-1 mt-65 mt-md-50 mt-sm-40 mt-xs-30">
+                        <div class="slider-item active">
+                            <div class="testimonial__item testimonial-item-three">
+                                <div class="testimonial__item-header d-flex justify-content-between align-items-center mb-30 mb-sm-25 mb-xs-20">
+                                    <div class="left d-flex align-items-center">
+
+                                        <div class="meta">
+                                            <div class="starts">
+                                                <ul>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <i class="fal fa-quote-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="description font-la mb-25">
+                                    <p>Insightful Trades has been a game-changer for DEF Tech Solutions. Their business trading services were instrumental in helping us navigate the rapidly evolving tech market.</p>
+                                </div>
+
+                                <div class="testimonial__item-footer d-flex justify-content-between">
+                                    <div class="socail-link">
+                                        <span class="name">Michael Johnson, CTO, DEF Tech Solutions</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-item">
+                            <div class="testimonial__item testimonial-item-three">
+                                <div class="testimonial__item-header d-flex justify-content-between align-items-center mb-30 mb-sm-25 mb-xs-20">
+                                    <div class="left d-flex align-items-center">
+
+
+                                        <div class="meta">
+                                            <div class="starts">
+                                                <ul>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <i class="fal fa-quote-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="description font-la mb-25">
+                                    <p>As a global player in the industry, Sky Ventures International needed a consultancy partner that could guide us through the complexities of international trade and market expansion. </p>
+                                </div>
+
+                                <div class="testimonial__item-footer d-flex justify-content-between">
+                                    <div class="socail-link">
+                                        <span class="name">Jane Smith, COO, Sky Ventures International </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-item">
+                            <div class="testimonial__item testimonial-item-three">
+                                <div class="testimonial__item-header d-flex justify-content-between align-items-center mb-30 mb-sm-25 mb-xs-20">
+                                    <div class="left d-flex align-items-center">
+
+
+                                        <div class="meta">
+                                            <div class="starts">
+                                                <ul>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                    <li><span></span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <i class="fal fa-quote-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="description font-la mb-25">
+                                    <p>We had the pleasure of partnering with Insightful Trades for our business consultation needs, and the experience has been nothing short of transformative. </p>
+                                </div>
+
+                                <div class="testimonial__item-footer d-flex justify-content-between">
+                                    <div class="socail-link">
+                                        <span class="name">Cheng Amanda, Marketing Director, VIO Enterprises</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial end -->
+
+    <div class="can-help-overly-home overflow-hidden">
+        <div class="can-help-overly">
+            <div class="container"></div>
+        </div>
+    <!-- can-help start -->
+    <section class="can-help can-help-home-1 pb-xs-80 pt-xs-80 pt-sm-100 pb-sm-100 pt-md-100 pb-md-100 pt-120 pb-120 overflow-hidden">
+        <div class="can-help-background" style="background-image: url({% static 'frontend/assets/img/home/can-help-background.png' %})"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7">
+                    <div class="can-help__content  mb-sm-40 mb-xs-40 mb-md-45 mb-lg-50">
+                        <h2 class="title color-white mb-sm-15 mb-xs-10 mb-20">Experience The Evolution Of Your Business</h2>
+
+                        <div class="description font-la mb-md-25 mb-sm-25 mb-xs-20 mb-lg-30 mb-40 color-white">
+                            <p>Partner with Insightful Trades for financial reporting that goes beyond compliance. Experience the power of financial information that not only meets regulatory standards but also becomes a strategic asset in the pursuit of your business goals. Unlock the potential of your financial data with our insightful reporting services.</p>
+                        </div>
+
+                        <div class="can-help__content-btn-group d-flex flex-column flex-sm-row">
+
+                            <a href="mailto:support@insightfultrades.com" class="theme-btn d-flex flex-column flex-md-row align-items-md-center">
+                                <div class="icon color-red">
+                                    <i class="icon-email-1"></i>
+                                    <!-- <img src="{% static 'frontend/assets/img/icon/phone-1.svg' %}" alt=""> -->
+                                </div>
+                                <div class="text">
+                                    <span class="font-la mb-10 d-block fw-500 color-white">Email Drop Us</span>
+                                    <h5 class="fw-500 color-white">support@insightfultrades.com</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-5">
+                    <div class="contact-form pt-md-30 pt-sm-25 pt-xs-20 pb-md-40 pb-sm-35 pb-xs-30 pt-xl-30 pb-xl-50 pt-45 pr-xl-50 pl-md-40 pl-sm-30 pl-xs-25 pr-md-40 pr-sm-30 pr-xs-25 pl-xl-50 pr-85 pb-60 pl-85">
+                        <div class="contact-form__header mb-sm-35 mb-xs-30 mb-40">
+                            <h6 class="sub-title fw-500 color-red text-uppercase mb-15"><img src="{% static 'frontend/assets/img/home/line.svg' %}" class="img-fluid mr-10" alt=""> Get In Touch</h6>
+                            <h3 class="title color-d_black">Free Consultation</h3>
+                        </div>
+
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="single-personal-info">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                            <div class="single-personal-info">
+                                <input type="email" placeholder="Your e-mail">
+                            </div>
+                            <div class="single-personal-info">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                            <div class="single-personal-info">
+                                <textarea placeholder="Your Massage"></textarea>
+                            </div>
+
+                            <button type="submit" class="theme-btn btn-sm btn-red">Free Consultant <i class="far fa-chevron-double-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- can-help end -->
+
+    </div>
+
+{% endblock %}

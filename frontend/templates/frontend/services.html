@@ -1,0 +1,121 @@
+{% extends "frontend/base.html" %}
+{% load static %}
+{% block title %} INSIGHTFUL TRADE - Services {% endblock %}
+{% block content %}
+
+ <!-- page-banner start -->
+    <section class="page-banner pt-xs-60 pt-sm-80 overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="page-banner__content mb-xs-10 mb-sm-15 mb-md-15 mb-20">
+                        <div class="transparent-text">Services</div>
+                        <div class="page-title">
+                            <h1>Services <span></span></h1>
+                        </div>
+                    </div>
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="{% url 'frontend:home' %}">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Services </li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="page-banner__media mt-xs-30 mt-sm-40">
+                        <img src="{% static 'frontend/assets/img/page-banner/page-banner-start.svg' %}" class="img-fluid start" alt="">
+                        <img src="{% static 'frontend/assets/img/page-banner/page-banner.jpg' %}" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- page-banner end -->
+
+    <!-- team-area start -->
+    <section class="services-details pb-xs-80 pt-xs-80 pt-sm-100 pb-sm-100 pt-md-100 pb-md-100 pt-120 pb-115 overflow-hidden">
+        <div class="container">
+            <div class="row" data-sticky_parent>
+                <div class="col-xl-8" data-sticky_column>
+                    <div class="media mb-40 mb-md-35 mb-sm-30 mb-xs-25">
+                        <img src="{% static 'frontend/assets/img/project-details/project-details.png' %}" alt="">
+                    </div>
+
+                    <div class="services-details__content">
+                        <h2>Finance & Strategy Service</h2>
+
+                        <p>Our team comprises seasoned professionals with extensive experience in diverse industries, ensuring you receive expert guidance tailored to your specific needs.Enhance operational efficiency and streamline workflows with our business process optimization services. We identify areas for improvement and implement solutions that maximize productivity and profitability.</p>
+
+                        <p>Your success is our priority. We work collaboratively, placing your goals at the forefront of our strategies and ensuring a personalized, client-centric approach.Stay ahead of the curve with our innovative solutions. We continuously explore new trends and technologies to deliver cutting-edge strategies that give you a competitive advantage.</p>
+
+                        <ul>
+                            <li>Business Growth</li>
+                            <li>Easy Customer Service</li>
+                            <li>24/7 Quality Service</li>
+                            <li>Quality Cost Service</li>
+                        </ul>
+
+                        <p>At the core of Insightful Trades is a commitment to empower businesses with knowledge, foresight, and innovative solutions. Our mission is to guide and support organizations in navigating the complexities of the global market, ensuring they make well-informed decisions that drive success.</p>
+
+                        <hr>
+
+                        <h4>Services</h4>
+
+                        <p>Services we offer includes:</p>
+
+                        <figure>
+                            <img src="{% static 'frontend/assets/img/services-details/services-details-1.png' %}" alt="">
+
+                            <ul>
+                                <li>Trade Facilitation</li>
+                                <li>Market Research and Analysis</li>
+                                <li>Risk Management</li>
+                                <li>Business Process Optimization</li>
+                                <li>Strategic Planning</li>
+                                <li>Business Process Optimization</li>
+                            </ul>
+                        </figure>
+
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="main-sidebar" data-sticky_column>
+                        <div class="single-sidebar-widget mb-40 pt-30 pr-30 pb-40 pl-30 pl-xs-20 pr-xs-20">
+                            <h4 class="wid-title mb-30 mb-xs-20 color-d_black text-capitalize">Our Services</h4>
+
+                            <div class="widget_categories">
+                                <ul>
+                                    <li><a href="#">Business Consulting <i class="fas fa-long-arrow-alt-right"></i></a></li>
+                                    <li><a href="#">Business Trade <i class="fas fa-long-arrow-alt-right"></i></a></li>
+                                    <li><a href="#">Investment Planning <i class="fas fa-long-arrow-alt-right"></i></a></li>
+                                    <li><a href="#">Strategy & Research <i class="fas fa-long-arrow-alt-right"></i></a></li>
+                                    <li><a href="#">Tax Management <i class="fas fa-long-arrow-alt-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="single-sidebar-widget have-any mb-40 pt-30 pr-30 pb-40 pl-30 pl-xs-20 pr-xs-20">
+
+                            <div class="media">
+                                <img src="{% static 'frontend/assets/img/services-details/have-any.png' %}" alt="">
+                            </div>
+
+                            <div class="have-any__item text-center" style="background-image: url({% static 'frontend/assets/img/services-details/have-any-bottom.png' %});">
+                                <h4 class="wid-title mb-20 mb-xs-15 color-white text-capitalize">Have any question?</h4>
+
+                                <a href="{% url 'frontend:contact' %}" class="theme-btn">Contact Us <i class="fab fa-telegram-plane"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team-area end -->
+
+{% endblock content %}

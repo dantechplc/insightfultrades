@@ -1,0 +1,28 @@
+{% extends "frontend/base.html" %}
+{% load static %}
+{% block title %} INSIGHTFUL TRADE - 404 page not found{% endblock %}
+{% block content %}
+
+ <section class="error pb-xs-80 pt-xs-80 pt-sm-100 pb-sm-100 pt-md-100 pb-md-100 pt-120 pb-120 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="error__content text-center">
+                        <div class="media mb-xs-40 mb-sm-45 mb-md-50 mb-lg-60 mb-80">
+                            <img src="{% static 'frontend/assets/img/404/404.png' %}" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="text">
+                            <h1 class="title mb-xs-10 mb-20 color-d_black">Oops! Nothing Was Found</h1>
+                            <div class="description mb-xs-20 mb-30 font-la color-black">
+                            </div>
+
+                            <a href="{% url 'frontend:home' %}" class="theme-btn">Back To Home page <i class="far fa-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

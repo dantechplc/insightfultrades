@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="dev_raj">
+    <!-- ======== Page title ============ -->
+    <title>{% block title %} INSIGHTFUL TRADE {% endblock %} </title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{% static 'frontend/assets/img/favicon.png' %}">
+    <!-- ===========  All Stylesheet ================= -->
+    <!--  Icon css plugins -->
+    <link rel="stylesheet" href="{% static 'frontend/assets/css/icons.css' %}">
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="{% static 'frontend/assets/css/magnific-popup.css' %}">
+    <!-- slick slider menu css file -->
+    <link rel="stylesheet" href="{% static 'frontend/assets/css/slick.min.css' %}">
+    <!--  Bootstrap css plugins -->
+    <link rel="stylesheet" href="{% static 'frontend/assets/css/bootstrap.min.css' %}">
+    <!-- template main style css file -->
+    <link rel="stylesheet" href="{% static 'frontend/assets/style.css' %}">
+
+</head>
+
+<body class="body-wrapper">
+    <!-- preloader -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
+            </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="N" class="letters-loading">
+                        N
+                    </span>
+                    <span data-text-preloader="S" class="letters-loading">
+                    S
+                    </span>
+                    <span data-text-preloader="H" class="letters-loading">
+                    H
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="G" class="letters-loading">
+                        G
+                    </span>
+                    <span data-text-preloader="H" class="letters-loading">
+                        H
+                    </span>
+                    <span data-text-preloader="T" class="letters-loading">
+                        T
+                    </span>
+
+                </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- welcome content start from here -->
+
+    <!-- header end -->
+    <header class="header header-1 header-3">
+        <div class="top-header d-none d-xl-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <div class="header-cta d-flex justify-content-end">
+                            <ul>
+                                <li><a href="mailto:support@insightfultrades.com"><i class="icon-email"></i>support@insightfultrades.com</a></li>
+                                <li><a><i class="fal fa-clock"></i> Mon – Fri: 8.00 – 18.00</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-header-wraper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="header-logo">
+                                <div class="logo">
+                                    <a href="{% url 'frontend:home' %}">
+                                        <img src="{% static 'frontend/assets/img/logo/logo-3.png' %}" alt="logo">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="header-menu d-none d-xl-block">
+                                <div class="main-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="{% url 'frontend:home' %}">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'frontend:services' %}">Our Services</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'frontend:about' %}">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'frontend:contact' %}">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="header-right d-flex align-items-center">
+
+                                <a href="{% url 'frontend:contact' %}" class="header-btn">Get A Quote <i class="far fa-chevron-double-right"></i></a>
+                                <div class="mobile-nav-bar d-block ml-3 ml-sm-5 d-xl-none">
+                                    <div class="mobile-nav-wrap">
+                                        <div id="hamburger">
+                                            <i class="fal fa-bars"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile menu - responsive menu  -->
+    <div class="mobile-nav mobile-nav-red">
+        <button type="button" class="close-nav">
+            <i class="fal fa-times-circle"></i>
+        </button>
+
+        <nav class="sidebar-nav">
+            <div class="navigation">
+                <div class="consulter-mobile-nav">
+                    <ul>
+                        <li>
+                            <a href="{% url 'frontend:home' %}">Home</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'frontend:services' %}">Our Services</a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'frontend:about' %}">About</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'frontend:contact' %}">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="sidebar-nav__bottom mt-20">
+                    <div class="sidebar-nav__bottom-contact-infos mb-20">
+                        <h6 class="color-black mb-5">Contact Info</h6>
+
+                        <ul>
+                            <li><a><i class="fal fa-clock"></i> Mon – Fri: 8.00 – 18.00</a></li>
+                            <li><a href="mailto:support@insightfultrades.com"><i class="icon-email"></i>support@insightfultrades.com</a></li>
+                            <li>
+                                <a class="header-contact d-flex align-items-center">
+                                    <div class="icon">
+                                        <i class="icon-call"></i>
+
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="offcanvas-overlay"></div> <!-- offcanvas-overlay -->
+    <!-- header end -->
+
+    <div class="header-gutter home"></div><!-- header end -->
+
+{% block content %}{% endblock %}
+
+    <!-- footer start -->
+    <footer class="footer-1 footer-3 overflow-hidden" style="background-image: url({% static 'frontend/assets/img/footer/footer-bg-3.png' %});">
+        <div class="overly">
+            <div class="container"></div>
+        </div>
+
+        <div class="footer-top__box pb-100 pb-lg-80 pb-md-70 pb-sm-60 pb-xs-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-top__box-wrapper d-flex flex-column flex-sm-row text-center text-sm-start justify-content-sm-between align-items-center" style="background-image: url({% static 'frontend/assets/img/footer/footer-box-bg.png' %});">
+                            <div class="text">
+                                <h3 class="title color-white">Get updated Informed to Subscribe our Newsletter</h3>
+                            </div>
+
+                            <div class="theme-btn__wrapper d-flex flex-column">
+                                <input type="email" class="theme-btn" placeholder="Your e-mail">
+                                <a href="{% url 'frontend:contact' %}" class="theme-btn">Subscribe Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-xl-3">
+                    <div class="single-footer-wid widget-description">
+                        <a href="{% url 'frontend:home' %}" class="d-block mb-30 mb-xs-20">
+                            <img src="{% static 'frontend/assets/img/logo/footer-logo-3.png' %}" alt="">
+                        </a>
+
+                        <div class="description font-la color-white mb-40 mb-sm-30 mb-xs-25">
+                            <p>Embark on a transformative journey with Insightful Trades. Our consultation services are more than just recommendations.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- /.col-lg-3 - single-footer-wid -->
+
+                <div class="col-md-6 col-xl-2">
+                    <div class="single-footer-wid pl-xl-10 pl-50">
+                        <h4 class="wid-title mb-30 color-white">Quick Link</h4>
+
+                        <ul>
+                            <li><a href="{% url 'frontend:about' %}">About Company</a></li>
+                            <li><a href="{% url 'frontend:services' %}">Our Services</a></li>
+                            <li><a href="{% url 'frontend:contact' %}">Support</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- /.col-lg-2 - single-footer-wid -->
+
+
+
+            </div>
+        </div>
+
+        <div class="footer-bottom overflow-hidden mt-20 mt-sm-15 mt-xs-10">
+            <div class="container">
+                <div class="footer-bottom-content d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div class="coppyright text-center text-md-start">
+                        &copy; 2024 <a href="#">INSIGHTFUL TRADES</a> | All Rights Reserved by <a href="https://insightfultradees.com">INSIGHTFUL TRADES</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!--  ALl JS Plugins
+    ====================================== -->
+    <script src="{% static 'frontend/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'frontend/assets/js/modernizr.min.js' %}"></script>
+    <script src="{% static 'frontend/assets/js/jquery.easing.js' %}"></script>
+    <script src="{% static 'frontend/assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'frontend/assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'frontend/assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'frontend/assets/js/scrollUp.min.js' %}"></script>
+    <script src="{% static 'frontend/assets/js/counterup.min.js' %}"></script>
+    <script src="{% static 'frontend/assets/js/jquery.sticky-kit.js' %}"></script>
+    <script src="{% static 'frontend/assets/js/magnific-popup.min.js' %}"></script>
+    <script src="{% static 'frontend/assets/js/jquery.easypiechart.min.js' %}"></script>
+    <script src="{% static 'frontend/assets/js/active.js' %}"></script>
+
+</body>
+
+</html>
